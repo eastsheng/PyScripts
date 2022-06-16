@@ -34,8 +34,9 @@ def printFile(path,level):
             else:
                 leveli=level+1
                 print(getDicStr(level)+os.path.basename(subpath))
-
-# printFile("/home/chends/softwares/my_python_packages/",1)
-path = sys.argv[0]
-print("+  tools")
-printFile(path,1)
+if __name__ == "__main__":
+    # printFile("/home/chends/softwares/my_python_packages/",1)
+    path = sys.path[0]
+    print(path)
+    print("+  tools")
+    printFile(path,1)

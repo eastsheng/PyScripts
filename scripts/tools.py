@@ -38,4 +38,4 @@ def printFile(path,level):
 # printFile("/home/chends/softwares/my_python_packages/",1)
 
 print("+  tools")
-printFile("/home/chends/softwares/my_python_packages/tools/",1)
+printFile("/home/cup/softwares/PyScripts/scripts",1)

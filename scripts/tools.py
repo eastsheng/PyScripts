@@ -36,6 +36,6 @@ def printFile(path,level):
                 print(getDicStr(level)+os.path.basename(subpath))
 
 # printFile("/home/chends/softwares/my_python_packages/",1)
-
+path = sys.argv[0]
 print("+  tools")
-printFile("/home/cup/softwares/PyScripts/scripts",1)
+printFile(path,1)

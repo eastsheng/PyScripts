@@ -1,4 +1,4 @@
-## ./tools/
+## ./scripts/
 1. `lammpsdata2xyz.py`: it can convert the lammps data file to .xyz or .lammpstrj files
 - command example:
 ```bash

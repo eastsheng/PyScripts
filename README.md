@@ -21,3 +21,7 @@ outputTraj_N_Frame.py  ./xxx.lammpstrj 0 10 ./output.lammpstrj
 outputTraj_N_Frame.py  ./xxx.xyz 0 10 ./output.xyz
 ```
 
+## make pyscripts to read
+```bash
+bash chmod.sh
+```

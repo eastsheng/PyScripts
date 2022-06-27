@@ -20,6 +20,13 @@ png2tif.py png_name tif_name fig_quality
 outputTraj_N_Frame.py  ./xxx.lammpstrj 0 10 ./output.lammpstrj
 outputTraj_N_Frame.py  ./xxx.xyz 0 10 ./output.xyz
 ```
+5. `sort_trj.py`: it can sort lammpstrj file, according to the "id, mol, or type" 
+- command example:
+```bash
+sort_trj.py  ./xxx.lammpstrj "id"
+sort_trj.py  ./xxx.lammpstrj "mol"
+sort_trj.py  ./xxx.lammpstrj "type"
+```
 
 ## make pyscripts to read
 ```bash

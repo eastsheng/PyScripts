@@ -4,6 +4,7 @@
 ```bash
 lammpsdata2xyz.py xxx.data 
 ```
+- Here, there should be a "# element" behind every mass in lammpsdata
 2. `msi2clayff.py`: it can convert the obtained hydroxylated SiO2 lammps data from `msi2lmp.exe` tool to lammps data with clayff force fields 
 - command example:
 ```bash

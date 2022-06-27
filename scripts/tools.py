@@ -9,7 +9,8 @@ examples = {
     "png2tif":["png2tif.py png_name tif_name fig_quality"],
     "outputTraj_N_Frame":["outputTraj_N_Frame.py  xxx.lammpstrj 0 10 output.lammpstrj",
                         "outputTraj_N_Frame.py  xxx.xyz 0 10 output.xyz"],
-    "msd_diffusion":["msd_diffusion.py --help"],
+    # "msd_diffusion":["msd_diffusion.py --help"],
+    "sort_trj":["sort_trj.py xxx.lammpstrj"],
 
 }
 

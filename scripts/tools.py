@@ -10,7 +10,7 @@ examples = {
     "outputTraj_N_Frame":["outputTraj_N_Frame.py  xxx.lammpstrj 0 10 output.lammpstrj",
                         "outputTraj_N_Frame.py  xxx.xyz 0 10 output.xyz"],
     # "msd_diffusion":["msd_diffusion.py --help"],
-    "sort_trj":["sort_trj.py xxx.lammpstrj"],
+    "sort_trj":["sort_trj.py xxx.lammpstrj 'mol' "],
 
 }
 
@@ -38,6 +38,8 @@ def printFile(path,level):
 if __name__ == "__main__":
     # printFile("/home/chends/softwares/my_python_packages/",1)
     path = sys.path[0]
-    print(path)
+    print("*--"*10,"PyScripts","--*"*10)
+    print("https://github.com/eastsheng/PyScripts")
     print("+  tools")
     printFile(path,1)
+    print("*--"*10,"PyScripts","*--"*10)

@@ -12,7 +12,7 @@ echo $file
 for pyfile in $file 
 do
 	if [ "$(FileSuffix ${pyfile})" = "py" ]; then
-        chmod +x $pyfile
+        chmod a+x $pyfile
 		echo "------------"
 		echo $pyfile
 	else

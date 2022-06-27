@@ -17,7 +17,7 @@ class SortTrj(object):
 			trj_sort = trj[np.argsort(trj[:,3].astype(int))]
 		return trj_sort
 
-	def write(self,sortbyid):
+	def rewrite(self,sortbyid):
 		trj_sort = self.sort(sortbyid)
 		with open(self.f,"r") as f, open("sort_"+self.f,"w") as w:
 			for i in range(9):
@@ -40,5 +40,5 @@ if __name__ == '__main__':
 	f = sys.argv[1]
 	sortbyid = sys.argv[2]
 	st = SortTrj(f)
-	st.write(sortbyid)
+	st.rewrite(sortbyid)
 	print("Job done!!!")

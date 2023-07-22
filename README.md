@@ -29,7 +29,17 @@ sort_trj.py  ./xxx.lammpstrj "mol"
 sort_trj.py  ./xxx.lammpstrj "type"
 ```
 
-## make pyscripts to read
+6. `pdb2xyz.py`: it can convert the pdbfile to xyzfile 
+
+```python
+pdb2xyz.py ./xxx.pdb
+pdb2xyz.py ./xxx.pdb xxx.xyz
+```
+
+
+
+## make scripts to read
+
 ```bash
-bash chmod.sh
+bash ./scripts/chmod.sh
 ```

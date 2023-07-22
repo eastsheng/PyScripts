@@ -5,6 +5,7 @@ import os
 examples = {
     "tools":["tools "],
     "lammpsdata2xyz":["lammpsdata2xyz.py xxx.data"],
+    "pdb2xyz":["pdb2xyz.py xxx.pdb"],
     "msi2clayff":["msi2clayff.py xxx.data"],
     "png2tif":["png2tif.py png_name tif_name fig_quality"],
     "outputTraj_N_Frame":["outputTraj_N_Frame.py  xxx.lammpstrj 0 10 output.lammpstrj",

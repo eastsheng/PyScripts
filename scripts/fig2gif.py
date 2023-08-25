@@ -107,4 +107,4 @@ if __name__ == "__main__":
 
     print("Your Command:\n\t- fig2gif.py",png_path,gif_file,duration)
     convert_pngs_to_gif(sorted_png_files, gif_file, duration=duration, 
-        compressImage=True, times=6)
+        compressImage=False, times=6)

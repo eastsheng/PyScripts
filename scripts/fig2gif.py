@@ -16,8 +16,24 @@ def custom_sort(file_path):
     # print(time)
     return numeric_part, time
 
+def compressImg(img,times=100):
+    img.convert('RGB')
+    px = int(img.size[0]/times)
+    py = int(img.size[1]/times)
+    img.thumbnail((px, py))
 
-def convert_pngs_to_gif(png_files, gif_file, duration=1.0):
+    return img
+
+
+def convert_pngs_to_gif(png_files, gif_file, duration=1.0, compressImage=False, times=10):
+    """
+    png_files: fig files list
+    gif_file: output gif name
+    duration: fps
+    compressImage: yes or not compress Image
+    if yes compressImage:
+        times: compress times
+    """
     # try:
     # Create a list to store the frames
     frames = []
@@ -26,6 +42,10 @@ def convert_pngs_to_gif(png_files, gif_file, duration=1.0):
     for png_file in tqdm(png_files):
         time = png_file.split("_")[-1].split("ns")[0]
         img = Image.open(png_file)
+        if compressImage == True:
+            img = compressImg(img,times=times)
+        else:
+            pass
         try:
             # 创建一个可以在图像上绘制文本的对象
             draw = ImageDraw.Draw(img)
@@ -86,4 +106,5 @@ if __name__ == "__main__":
         duration = 5.0
 
     print("Your Command:\n\t- fig2gif.py",png_path,gif_file,duration)
-    convert_pngs_to_gif(sorted_png_files, gif_file, duration=duration)
+    convert_pngs_to_gif(sorted_png_files, gif_file, duration=duration, 
+        compressImage=True, times=6)

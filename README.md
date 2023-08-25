@@ -36,6 +36,21 @@ pdb2xyz.py ./xxx.pdb
 pdb2xyz.py ./xxx.pdb xxx.xyz
 ```
 
+7.  figures to gif file
+
+```
+fig2gif.py [figs_path] [gif_file] [duration]
+fig2gif.py ./2d/ output.gif 1
+```
+
+
+
+## Dependencies
+
+```
+pip install -r requirements.txt
+```
+
 
 
 ## make scripts to read

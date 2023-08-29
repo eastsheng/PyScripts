@@ -13,6 +13,7 @@ examples = {
     # "msd_diffusion":["msd_diffusion.py --help"],
     "sort_trj":["sort_trj.py xxx.lammpstrj 'mol' "],
     "fig2gif":["fig2gif.py ./2d/ output.gif 1"],
+    "to_HTR_lammpstrj":["to_HTR_lammpstrj.py -i input.lammpstrj -o output_HTR.lammpstrj -fr 1 2"],
 }
 
 

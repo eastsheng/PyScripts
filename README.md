@@ -1,4 +1,4 @@
-## ./scripts/
+## PyScripts
 1. `lammpsdata2xyz.py`: it can convert the lammps data file to .xyz or .lammpstrj files
 - command example:
 ```bash
@@ -38,10 +38,19 @@ pdb2xyz.py ./xxx.pdb xxx.xyz
 
 7.  figures to gif file
 
-```
+```bash
 fig2gif.py [figs_path] [gif_file] [duration]
 fig2gif.py ./2d/ output.gif 1
 ```
+
+8. convert lammpstrj file to a trjfile of meet HTR
+
+```bash
+to_HTR_lammpstrj.py -h
+to_HTR_lammpstrj.py -i input.lammpstrj -o output_HTR.lammpstrj -fr 1 2
+```
+
+
 
 
 
@@ -58,3 +67,6 @@ pip install -r requirements.txt
 ```bash
 bash ./scripts/chmod.sh
 ```
+
+
+

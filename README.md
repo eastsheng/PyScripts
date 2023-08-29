@@ -43,7 +43,7 @@ fig2gif.py [figs_path] [gif_file] [duration]
 fig2gif.py ./2d/ output.gif 1
 ```
 
-8. convert lammpstrj file to a trjfile of meet HTR
+8. convert lammpstrj file to a trjfile of meet [HTR](https://github.com/XueerPiaoaPiao/HTR)
 
 ```bash
 to_HTR_lammpstrj.py -h

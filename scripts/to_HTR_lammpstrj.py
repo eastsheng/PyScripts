@@ -22,9 +22,10 @@ if __name__ == '__main__':
 	except:
 		outputfile = inputfile.split(".")[0]+"HTR.lammpstrj"
 	
+	mframe,nframe = args.fr[0], args.fr[1]
+	
 	md = RLT.ReadLammpsTraj(inputfile)
 	md.read_info()
-	mframe,nframe = 1, 2
 	w =open(outputfile,"w")
 	for i in tqdm(range(mframe,nframe+1)):
 		traj = md.read_traj(i)[["id","type","x","y","z"]]

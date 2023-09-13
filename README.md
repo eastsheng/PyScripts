@@ -50,7 +50,11 @@ to_HTR_lammpstrj.py -h
 to_HTR_lammpstrj.py -i input.lammpstrj -o output_HTR.lammpstrj -fr 1 2
 ```
 
+9. combine files to a file
 
+```bash
+combine_files.py ./temp/ traj_npt_dissociation_330_1.lammpstrj
+```
 
 
 

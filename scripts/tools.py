@@ -14,6 +14,7 @@ examples = {
     "sort_trj":["sort_trj.py xxx.lammpstrj 'mol' "],
     "fig2gif":["fig2gif.py ./2d/ output.gif 1"],
     "to_HTR_lammpstrj":["to_HTR_lammpstrj.py -i input.lammpstrj -o output_HTR.lammpstrj -fr 1 2"],
+    "combine_files":["combine_files.py ./temp/ xxx.lammpstrj"],
 }
 
 

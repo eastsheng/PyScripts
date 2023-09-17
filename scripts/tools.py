@@ -15,6 +15,7 @@ examples = {
     "fig2gif":["fig2gif.py ./2d/ output.gif 1"],
     "to_HTR_lammpstrj":["to_HTR_lammpstrj.py -i input.lammpstrj -o output_HTR.lammpstrj -fr 1 2"],
     "combine_files":["combine_files.py ./temp/ xxx.lammpstrj"],
+    "tiangan_dizhi":["tiangan_dizhi.py -t 2023","tiangan_dizhi.py -g '甲申' 2023"],    
 }
 
 

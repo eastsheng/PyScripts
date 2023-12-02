@@ -13,7 +13,7 @@ if __name__ == '__main__':
 	parser = argparse.ArgumentParser()
 	parser.add_argument('-i', type=str, help='input lammpstrj file, example: -i input.lammpstrj')
 	parser.add_argument('-o', type=str, help='output lammpstrj file, example: -o output.lammpstrj')
-	parser.add_argument('-fr', type=int, default=[1,1], nargs='+', help='range of frames, example: -fr 1 100')
+	parser.add_argument('-fr', type=int, default=[1,1 1], nargs='+', help='range of frames, example: -fr 1 100 1')
 	args = parser.parse_args()
 	inputfile = args.i
 
@@ -22,12 +22,12 @@ if __name__ == '__main__':
 	except:
 		outputfile = inputfile.split(".")[0]+"HTR.lammpstrj"
 	
-	mframe,nframe = args.fr[0], args.fr[1]
+	mframe,nframe, interval = args.fr[0], args.fr[1], args.fr[2]
 	
 	md = RLT.ReadLammpsTraj(inputfile)
 	md.read_info()
 	w =open(outputfile,"w")
-	for i in tqdm(range(mframe,nframe+1)):
+	for i in tqdm(range(mframe,nframe+1,interval)):
 		traj = md.read_traj(i)[["id","type","x","y","z"]]
 		new_traj = traj[traj['type']=="1"].values
 		m, n = new_traj.shape

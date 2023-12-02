@@ -13,7 +13,7 @@ if __name__ == '__main__':
 	parser = argparse.ArgumentParser()
 	parser.add_argument('-i', type=str, help='input lammpstrj file, example: -i input.lammpstrj')
 	parser.add_argument('-o', type=str, help='output lammpstrj file, example: -o output.lammpstrj')
-	parser.add_argument('-fr', type=int, default=[1,1 1], nargs='+', help='range of frames, example: -fr 1 100 1')
+	parser.add_argument('-fr', type=int, default=[1, 1, 1], nargs='+', help='range of frames, example: -fr 1 100 1')
 	args = parser.parse_args()
 	inputfile = args.i
 
